@@ -19,7 +19,7 @@
         left: 0;
         right: 0;
         height: 40px; 
-        background: linear-gradient(to top, white, transparent);
+        background: linear-gradient(to top, white, transpa
         pointer-events: none; 
     }
 </style>
@@ -79,6 +79,7 @@
                                md:opacity-0 md:scale-95 md:pointer-events-none md:transition-all md:ease-out md:duration-200
                                md:top-full md:left-1/2 md:-translate-x-1/2">
                         <li><a href="#" class="project-link block py-1 hover:opacity-60" data-project="cny-loong" data-lang-key="cny-loong">24' CNY-Year of The Loong</a></li>
+                        <li><a href="#" class="project-link block py-1 hover:opacity-60" data-project="cny-equestrian" data-lang-key="cny-equestrian">26' CNY-HStreet Equestrian</a></li>
                         <li><a href="#" class="block py-1 hover:opacity-60" data-filter="dream-pack" data-lang-key="dream-pack">Dream Pack (WIP)</a></li>
                         <li><a href="#" class="block py-1 hover:opacity-60" data-filter="qixi-magpie" data-lang-key="qixi-magpie">Qixi Festival Design - Indoor QIXI Magpie (WIP)</a></li>
                         <li><a href="#" class="block py-1 hover:opacity-60" data-filter="qixi-galaxy" data-lang-key="qixi-galaxy">Qixi Festival Design - Indoor QIXI Galaxy (WIP)</a></li>
@@ -181,6 +182,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // --- Data ---
     const projectImages = {
+    // ✨ 在这里加入新项目的图片列表 ✨
+    'cny-equestrian': ['images/26cny_01.jpg', 'images/26cny_02.jpg', 'images/26cny_03.jpg','images/26cny_04.jpg','images/26cny_05.jpg',],
     'puma-rose': ['images/rose-1.jpg', 'images/rose-2.jpg', 'images/rose-3.jpg', 'images/rose-4.jpg', 'images/rose-5.jpg', 'images/rose-6.jpg', 'images/rose-7.jpg'],
     'pulsar-lite': ['images/pulsar-1.jpg', 'images/pulsar-2.jpg', 'images/pulsar-3.jpg', 'images/pulsar-4.jpg', 'images/pulsar-5.jpg', 'images/pulsar-6.jpg', 'images/pulsar-7.jpg', 'images/pulsar-8.jpg'],
     'cny-loong': ['images/cny-1.jpg', 'images/cny-2.jpg', 'images/cny-3.jpg', 'images/cny-4.jpg', 'images/cny-5.jpg', 'images/cny-6.jpg', 'images/cny-7.jpg', 'images/cny-8.jpg'],
@@ -195,6 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
 };
     const translations = {
         'collab': { en: 'COLLAB', zh: '联名项目' }, 'footwear': { en: 'FOOTWEAR', zh: '鞋设计' },
+        'cny-equestrian': { en: "26' CNY-HStreet Equestrian", zh: "26'新年限定 - HStreet 马术" },
         'cmf': { en: 'CMF', zh: '色彩材质' }, 'kids': { en: 'KIDS', zh: '儿童' },
         'lab': { en: 'LAB', zh: '实验项目' }, 'english': { en: 'English', zh: '中文' },
         'footwear-design': { en: 'Footwear Design', zh: '鞋设计' }, 'email': { en: 'Email', zh: '邮箱' },
@@ -203,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'pulsar-lite': { en: 'Pulsar Lite TN', zh: 'Pulsar Lite 新底新面' },
         'pulsar-wedge': { en: 'Pulsar Wedge Sandal NU (WIP)', zh: 'Pulsar Wedge 玛丽珍新面 (整理中)' },
         'rs-sandel': { en: 'RS-Sandel NU (WIP)', zh: 'RS 凉鞋新面 (整理中)' },
-        'cny-loong': { en: "24' CNY - Year of The Loong", zh: '24龙年限定系列' },
+        'cny-loong': { en: "24' CNY - Year of The Loong", zh: '24\'龙年限定系列' },
         'dream-pack': { en: 'Dream Pack (WIP)', zh: 'Dream Pack系列 (整理中)' },
         'qixi-magpie': { en: "24' Qixi - Magpie (WIP)", zh: '七夕限定 - 喜鹊 (整理中)' },
         'qixi-galaxy': { en: "24' Qixi - Galaxy (WIP)", zh: '七夕限定 - 银河 (整理中)' },
@@ -240,6 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextBtn = document.getElementById('next-btn');
         const prevBtn = document.getElementById('prev-btn');
         const homepageSlidesData = [
+            { project: 'cny-equestrian', image: 'images/26cny_home.jpg', alt: 'TTTTTTT' },
             { project: 'puma-rose',      image: 'images/home-1.jpg', alt: 'Project PUMA ROSÉ' },
             { project: 'pulsar-lite',    image: 'images/home-2.jpg', alt: 'Project Pulsar Lite' },
             { project: 'cny-loong',      image: 'images/home-3.jpg', alt: 'Project Year of The Loong' },
