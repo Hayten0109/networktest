@@ -94,10 +94,10 @@
                                md:opacity-0 md:scale-95 md:pointer-events-none md:transition-all md:ease-out md:duration-200
                                md:top-full md:left-1/2 md:-translate-x-1/2">
                         <li><a href="#" class="project-link block py-1 hover:opacity-60" data-project="fun-racer" data-lang-key="fun-racer">Fun Racer Trial Sandal TN</a></li>
+                        <li><a href="#" class="project-link block py-1 hover:opacity-60" data-project="excursion-utl" data-lang-key="excursion-utl">Excursion UTL WTR NU</a></li>
+                        <li><a href="#" class="project-link block py-1 hover:opacity-60" data-project="pounce-lite" data-lang-key="pounce-lite">Pounce Lite Sandal ND</a></li>
                         <li><a href="#" class="block py-1 hover:opacity-60" data-filter="evolve-sandal" data-lang-key="evolve-sandal">Evolve Sandal OTNU (WIP)</a></li>
-                        <li><a href="#" class="block py-1 hover:opacity-60" data-filter="excursion-utl" data-lang-key="excursion-utl">Excursion UTL WTR NU (WIP)</a></li>
                         <li><a href="#" class="block py-1 hover:opacity-60" data-filter="evolve-run" data-lang-key="evolve-run">Evolve Run Slip-on NU (WIP)</a></li>
-                        <li><a href="#" class="block py-1 hover:opacity-60" data-filter="pounce-lite" data-lang-key="pounce-lite">Pounce Lite Sand ND (WIP)</a></li>
                     </ul>
                 </li>
                  <li class="relative w-full text-center md:w-auto">
@@ -188,6 +188,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'pulsar-lite': ['images/pulsar-1.jpg', 'images/pulsar-2.jpg', 'images/pulsar-3.jpg', 'images/pulsar-4.jpg', 'images/pulsar-5.jpg', 'images/pulsar-6.jpg', 'images/pulsar-7.jpg', 'images/pulsar-8.jpg'],
     'cny-loong': ['images/cny-1.jpg', 'images/cny-2.jpg', 'images/cny-3.jpg', 'images/cny-4.jpg', 'images/cny-5.jpg', 'images/cny-6.jpg', 'images/cny-7.jpg', 'images/cny-8.jpg'],
     'fun-racer': ['images/fun-1.jpg', 'images/fun-2.jpg', 'images/fun-3.jpg', 'images/fun-4.jpg', 'images/fun-5.jpg', 'images/fun-6.jpg'],
+    'excursion-utl': ['images/excursion_home.jpg', 'images/excursion_2.jpg', 'images/excursion_3.jpg', 'images/excursion_4.jpg', 'images/excursion_5.jpg'],
+    'pounce-lite': ['images/POUNCE_LITE SANDAL_1.jpg', 'images/POUNCE_LITE SANDAL_2.jpg', 'images/POUNCE_LITE SANDAL_3.jpg', 'images/POUNCE_LITE SANDAL_4.jpg'],
     'material-force': [
         'images/Material-1.jpg', 'images/Material-2.jpg', 'images/Material-3.jpg',
         'images/Material-4.jpg', 'images/Material-5.jpg', 'images/Material-6.jpg',
@@ -215,9 +217,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'fun-racer': { en: 'Fun Racer Trial Sandal TN', zh: 'Fun Racer 越野凉鞋新底新面' },
         'material-force': { en: 'Material Force - Body Installation', zh: '物质力量 - 感官装置' },
         'evolve-sandal': { en: 'Evolve Sandal OT NU (WIP)', zh: 'Evolve 露趾凉鞋新面 (整理中)' },
-        'excursion-utl': { en: 'Excursion UTL WTR NU (WIP)', zh: 'Excursion UTL 秋冬新面 (整理中)' },
+        'excursion-utl': { en: 'Excursion UTL WTR NU', zh: 'Excursion UTL 秋冬新面' },
         'evolve-run': { en: 'Evolve Run Slip-On NU (WIP)', zh: 'Evolve Run 一脚蹬新面 (整理中)' },
-        'pounce-lite': { en: 'Pounce Lite Sandal NU (WIP)', zh: 'Pounce Lite 凉鞋新面 (整理中)' },
+        'pounce-lite': { en: 'Pounce Lite Sandal NU', zh: 'Pounce Lite 凉鞋新面' },
         'back': { en: 'Back', zh: '返回' },
     };
 
@@ -244,12 +246,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextBtn = document.getElementById('next-btn');
         const prevBtn = document.getElementById('prev-btn');
         const homepageSlidesData = [
-            { project: 'cny-equestrian', image: 'images/26cny_home.jpg', alt: 'TTTTTTT' },
             { project: 'puma-rose',      image: 'images/home-1.jpg', alt: 'Project PUMA ROSÉ' },
             { project: 'pulsar-lite',    image: 'images/home-2.jpg', alt: 'Project Pulsar Lite' },
-            { project: 'cny-loong',      image: 'images/home-3.jpg', alt: 'Project Year of The Loong' },
-            { project: 'fun-racer',      image: 'images/home-4.jpg', alt: 'Project Fun Racer' },
-            { project: 'material-force', image: 'images/home-5.jpg', alt: 'Project Material Force' }
+            { project: 'cny-equestrian', image: 'images/26cny_home.jpg', alt: 'TTTTTTT' },
+            { project: 'excursion-utl',  image: 'images/excursion_home.jpg', alt: 'Project Excursion UTL' },
+            { project: 'material-force', image: 'images/home-5.jpg', alt: 'Project Material Force' },
         ];
 
         // 根据上面的列表自动生成轮播图
